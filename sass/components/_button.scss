@@ -1,0 +1,20 @@
+// Boutton 
+ .title_button {
+        padding: 2rem;
+        border-radius: 5rem;
+        background-color: $color2;
+        color: $color4;
+        font-size: 2rem;
+        border: transparent;
+        box-shadow: 0rem 0rem 0.8rem $color1;
+        margin-bottom: 3rem;
+        transition: ease 1s .5s;
+        
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            opacity: 0.7;
+            box-shadow: 0.5rem 0rem 1.8rem $color1;
+        }
+    }
+// Fin Boutton

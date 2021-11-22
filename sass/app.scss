@@ -1,0 +1,63 @@
+/* *********************************************************************************** */
+                                /* SOMMAIRE */
+
+                        /* 1. Police Ecriture */
+                        /* 2. Couleur */
+                        // 3. Sass
+                        /* 4. Body */
+                        /* 5. Container */
+                        /* 6. Header */
+                        /* 7. Main */
+                        /* 8. Footer */
+
+                                /* Fin Sommaire */
+/* ********************************************************************************** */
+// 1. Polices Ecriture
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,300&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,300&family=Roboto:wght@100&family=Shrikhand&display=swap');
+// 1. Fin Polices Ecriture
+
+// 2. Couleur
+$color1: #9556DC;
+$color2: #FF79DA;
+$color3: #99E2D0;
+$color4 : #ffffff;
+$color5: #000000;
+// 2. Fin Couleur
+
+// 3. Sass
+// Components
+@import 'components/button';
+@import 'components/cards';
+
+// Layout
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/form';
+@import 'layout/main';
+@import 'layout/footer';
+// Fin 3. Sass
+
+// 4. Body
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+// 4. Fin Body
+
+
+

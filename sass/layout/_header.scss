@@ -1,14 +1,34 @@
-.header {
-    background: $colour-primary;
-    height: 10rem;
+// 6. Header
+.entete {
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;   
-    &__logo {
-        font-size: 7rem;
-        color: $colour-secondary;
-        margin-left: 10rem;
-        @include heading-shadow($colour-white);
+    height: 100px;
+}
+
+.grid_container1 {
+    background-color: $color3;
+    border-radius: 0.2rem;
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .title {
+        font-size: 3.5rem;
+        width: 25%;
+        text-align: center;
+    }
+    
+    .title_infos {
+        margin-top: 0rem;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 3rem;
     }
 }
+// 6. Fin Header
