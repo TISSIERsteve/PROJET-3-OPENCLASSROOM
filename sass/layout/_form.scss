@@ -1,10 +1,10 @@
 // Formulaire
 .formulaire {
-     width: 100%;
+    width: 100%;
     margin: 0 auto;
 
      .form {
-         box-shadow:  inset 0rem 0rem 1rem 3px #444343;
+         box-shadow:  inset -1rem 2rem 1rem -2rem #444343;
          background-color: rgb(238, 234, 234);
          width: 100%;
          border-radius: 4px;
@@ -26,6 +26,7 @@
 
          &::placeholder {
              text-align: center;
+             color: $color6;
          }
      }
     
@@ -35,9 +36,9 @@
     
      .input-icone i{
          position:absolute; 
-         left: 0rem;
+         left: 4rem;
          top: 1rem; 
-         color: rgb(68, 67, 67);
+         color: $color6;
      }
 
      .position {

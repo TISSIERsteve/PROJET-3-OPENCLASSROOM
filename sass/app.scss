@@ -14,7 +14,7 @@
 /* ********************************************************************************** */
 // 1. Polices Ecriture
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,300&family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,300&family=Roboto:wght@100&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,300&family=Roboto:wght@100;900&family=Shrikhand&display=swap');
 // 1. Fin Polices Ecriture
 
 // 2. Couleur
@@ -22,7 +22,8 @@ $color1: #9556DC;
 $color2: #FF79DA;
 $color3: #99E2D0;
 $color4 : #ffffff;
-$color5: #000000;
+$color5 : #f2f2f2;
+$color6: #000000;
 // 2. Fin Couleur
 
 // 3. Sass
@@ -47,7 +48,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 figure {

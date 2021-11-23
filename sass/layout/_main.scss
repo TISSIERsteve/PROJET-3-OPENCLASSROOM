@@ -19,33 +19,37 @@
         justify-content: space-evenly;
     }
 
-    .store {
-        color: $color1;
-    }
     
     .fonctionnement_fas i {
         margin-right: 1.5rem;
         margin-left: 1.5rem;
+        color: #8b8a8a;
     }
     
+    .fonctionnement_fas .store {
+        color: $color1;
+    }
+
     .articles_filtres_a {
         position: relative;
         text-decoration: none;
         display: flex;
         justify-content: flex-start;
         border: transparent;
-        background-color: $color3;
+        background-color: $color5;
+        font-weight: bold;
         padding: 2rem;
         border-radius: 2rem;
         width: 25%;
         font-size: 2rem;
         transition: ease 1s 0.5s;
         opacity: 0.8;
-        color: $color1;
+        color: $color6;
+        box-shadow: 0.2rem 0.2rem 0rem 0.2rem rgb(221, 219, 219);
         
         
         &:hover {
-            color: $color5;
+            // color: $color5;
             font-weight: bold;
             transform: scale(1.1);
             opacity: 1;

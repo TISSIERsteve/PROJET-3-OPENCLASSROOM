@@ -10,22 +10,23 @@
 /* Fin Sommaire */
 /* ********************************************************************************** */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,300&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,300&family=Roboto:wght@100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,300&family=Roboto:wght@100;900&family=Shrikhand&display=swap");
 .title_button {
   padding: 2rem;
   border-radius: 5rem;
-  background-color: #FF79DA;
+  background: linear-gradient(70deg, #ff79da, #9556dc);
   color: #ffffff;
   font-size: 2rem;
   border: transparent;
   box-shadow: 0rem 0rem 0.8rem #9556DC;
   margin-bottom: 3rem;
-  transition: ease 1s 0.5s;
+  transition: ease-in-out 0.8s;
 }
 .title_button:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  background: linear-gradient(70deg, rgba(255, 121, 218, 0.8), rgba(149, 86, 220, 0.8));
   cursor: pointer;
-  opacity: 0.7;
+  font-weight: 500;
   box-shadow: 0.5rem 0rem 1.8rem #9556DC;
 }
 
@@ -95,7 +96,7 @@
   margin-left: 1rem;
 }
 .grid_container3 figcaption h4 {
-  color: #000000;
+  color: #f2f2f2;
   font-size: 2rem;
 }
 .grid_container3 figcaption h4:hover {
@@ -105,7 +106,7 @@
 .grid_container3 figcaption p {
   font-size: 1.8rem;
   margin-top: -2rem;
-  color: #000000;
+  color: #f2f2f2;
 }
 .grid_container3 figcaption p:hover {
   transform: scale(1.1);
@@ -142,7 +143,7 @@
 }
 
 .grid_container1 {
-  background-color: #99E2D0;
+  background-color: #f2f2f2;
   border-radius: 0.2rem;
   width: 100%;
 }
@@ -151,13 +152,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "roboto", sans-serif;
 }
-.description .title {
-  font-size: 3.5rem;
+.description h2 {
+  font-weight: bold;
   width: 25%;
   text-align: center;
+  font-size: 3.5rem;
 }
-.description .title_infos {
+.description p {
+  font-weight: 600;
   margin-top: 0rem;
   font-size: 2rem;
   text-align: center;
@@ -169,7 +173,7 @@
   margin: 0 auto;
 }
 .formulaire .form {
-  box-shadow: inset 0rem 0rem 1rem 3px #444343;
+  box-shadow: inset -1rem 2rem 1rem -2rem #444343;
   background-color: #eeeaea;
   width: 100%;
   border-radius: 4px;
@@ -189,15 +193,16 @@
 }
 .formulaire input[type=search]::placeholder {
   text-align: center;
+  color: #000000;
 }
 .formulaire .input-icone {
   position: relative;
 }
 .formulaire .input-icone i {
   position: absolute;
-  left: 0rem;
+  left: 4rem;
   top: 1rem;
-  color: #444343;
+  color: #000000;
 }
 .formulaire .position {
   font-size: 3.5rem;
@@ -221,12 +226,13 @@
   display: flex;
   justify-content: space-evenly;
 }
-.fonctionnement .store {
-  color: #9556DC;
-}
 .fonctionnement .fonctionnement_fas i {
   margin-right: 1.5rem;
   margin-left: 1.5rem;
+  color: #8b8a8a;
+}
+.fonctionnement .fonctionnement_fas .store {
+  color: #9556DC;
 }
 .fonctionnement .articles_filtres_a {
   position: relative;
@@ -234,17 +240,18 @@
   display: flex;
   justify-content: flex-start;
   border: transparent;
-  background-color: #99E2D0;
+  background-color: #f2f2f2;
+  font-weight: bold;
   padding: 2rem;
   border-radius: 2rem;
   width: 25%;
   font-size: 2rem;
   transition: ease 1s 0.5s;
   opacity: 0.8;
-  color: #9556DC;
+  color: #000000;
+  box-shadow: 0.2rem 0.2rem 0rem 0.2rem #dddbdb;
 }
 .fonctionnement .articles_filtres_a:hover {
-  color: #000000;
   font-weight: bold;
   transform: scale(1.1);
   opacity: 1;
@@ -323,7 +330,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 figure {
