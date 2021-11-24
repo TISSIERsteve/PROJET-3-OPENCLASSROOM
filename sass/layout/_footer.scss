@@ -8,6 +8,7 @@
     .logo_footer {
        width: 8%;
        margin-top: 3rem;
+       margin-bottom: 2rem;
    }
 
    ul {
@@ -16,9 +17,11 @@
     
     li {
       padding-bottom: 1rem;
+      font-weight: bold;
 
       a {
           display: inline-block;
+
           &:hover {
         transform: scale(1.1);
         color: $color4;

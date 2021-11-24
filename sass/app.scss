@@ -9,6 +9,7 @@
                         /* 6. Header */
                         /* 7. Main */
                         /* 8. Footer */
+                        // 9. Load Spinner
 
                                 /* Fin Sommaire */
 /* ********************************************************************************** */
@@ -30,6 +31,7 @@ $color6: #000000;
 // Components
 @import 'components/button';
 @import 'components/cards';
+@import 'components/load_Spinner';
 
 // Layout
 @import 'layout/container';
@@ -40,20 +42,34 @@ $color6: #000000;
 // Fin 3. Sass
 
 // 4. Body
+.container {
+    // position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    animation:  container 10s;
+
+    @keyframes container {
+        0% {
+            opacity: 0;
+        }       
+    }
+}
+
 html {
     font-size: 62.5%;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-figure {
-    margin: 0;
-}
+// figure {
+//     margin: 0;
+// }
 
 a {
     text-decoration: none;

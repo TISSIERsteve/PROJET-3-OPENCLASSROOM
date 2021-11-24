@@ -2,27 +2,34 @@
 .grid_container3 {
     width: 100%;
     margin-top: 5rem;
+    background-color: #F2F2F2;
     
     .restaurants {
         width: 100%;
-        border-radius: 0.2rem;
     }
 
     .restaurants_title h2 {
-        margin-left: 5.5rem;
+        margin-left: 8rem;
+        margin-bottom: 2rem;
         padding-top: 1rem;
         font-size: 3rem;
     }
 
     .container_item {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-wrap: wrap;
+        width: 85%;
+        margin: 0 auto;
     }
     
     .container_item a{
-        display: flex;
         width: 48%;
+
+        &:hover {
+            transform: scale(1.02);
+            transition: ease-in-out 0.5s;
+        }
     }
     
     figure{
@@ -30,10 +37,9 @@
         height: 28rem;
         background-color: $color4;
         border-radius: 1rem;
-        border: 0.4rem solid $color4;
         position: relative;
         margin-bottom: 5rem;
-        box-shadow: 0.1rem 0.1rem rgb(156, 135, 135);
+        box-shadow: 0.2rem 0.2rem rgb(156, 135, 135);
     }
     
     img {
@@ -59,7 +65,7 @@
         border-radius: 0.2rem;
         padding: 1rem;
         text-align: center;
-        color: #0eb109;
+        color: #1a7916ab;
         font-size: 2rem;
         font-weight: bold;
         background-color: #99E2D0;
@@ -67,7 +73,6 @@
     }
 
     figcaption {
-
         display: flex;
         width: 95%;
         flex-direction: column;
@@ -75,8 +80,9 @@
         margin-left: 1rem;
         
         h4 {
-            color: $color5;
+            color: $color6;
             font-size: 2rem;
+            margin-top: 1rem;
             
             &:hover {
             transition: .5s ease;
@@ -86,8 +92,8 @@
 
         p {
             font-size: 1.8rem;
-            margin-top: -2rem;
-            color: $color5;
+            margin-top: 1rem;
+            color: $color6;
         
         &:hover {
             transform: scale(1.1);
@@ -102,18 +108,18 @@
          font-size: 4rem;
          color: black;
          padding: 1rem;
-         transition: linear 2s;
-         
-         &::before {
-             content: "\f004";
+        
+        &::before {
+            content: "\f004";
+            transition: ease-in-out 2s;
+            mix-blend-mode: hard-light;
             }
-            
-         &:hover::before{
-                font-weight: bold;
+        
+        &:hover::before{
                 color: $color1;
+                font-weight: bold;
                 cursor: pointer;
-                
-            }
+                }
         }
         }
 }

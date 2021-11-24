@@ -1,0 +1,22 @@
+// 9. Load Spinner
+.loader_spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    color: rgb(8, 8, 8);
+    font-size: 10rem;
+    animation: spinner 5s;
+     
+    @keyframes spinner {
+        100% {
+        z-index: 100;
+        transform: translate(-50%, -50%) rotate(360deg);
+        opacity: 10;
+    }
+   
+   }
+}
+
+// 9. Fin Load Spinner
+

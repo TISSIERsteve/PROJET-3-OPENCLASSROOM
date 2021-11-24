@@ -20,47 +20,52 @@
   border: transparent;
   box-shadow: 0rem 0rem 0.8rem #9556DC;
   margin-bottom: 3rem;
-  transition: ease-in-out 0.8s;
+  transition: ease-in-out 0.7s;
+  font-weight: bold;
 }
 .title_button:hover {
   transform: scale(1.2);
   background: linear-gradient(70deg, rgba(255, 121, 218, 0.8), rgba(149, 86, 220, 0.8));
   cursor: pointer;
-  font-weight: 500;
   box-shadow: 0.5rem 0rem 1.8rem #9556DC;
 }
 
 .grid_container3 {
   width: 100%;
   margin-top: 5rem;
+  background-color: #F2F2F2;
 }
 .grid_container3 .restaurants {
   width: 100%;
-  border-radius: 0.2rem;
 }
 .grid_container3 .restaurants_title h2 {
-  margin-left: 5.5rem;
+  margin-left: 8rem;
+  margin-bottom: 2rem;
   padding-top: 1rem;
   font-size: 3rem;
 }
 .grid_container3 .container_item {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
 }
 .grid_container3 .container_item a {
-  display: flex;
   width: 48%;
+}
+.grid_container3 .container_item a:hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.5s;
 }
 .grid_container3 figure {
   width: 100%;
   height: 28rem;
   background-color: #ffffff;
   border-radius: 1rem;
-  border: 0.4rem solid #ffffff;
   position: relative;
   margin-bottom: 5rem;
-  box-shadow: 0.1rem 0.1rem #9c8787;
+  box-shadow: 0.2rem 0.2rem #9c8787;
 }
 .grid_container3 img {
   width: 100%;
@@ -83,7 +88,7 @@
   border-radius: 0.2rem;
   padding: 1rem;
   text-align: center;
-  color: #0eb109;
+  color: #1a7916ab;
   font-size: 2rem;
   font-weight: bold;
   background-color: #99E2D0;
@@ -96,8 +101,9 @@
   margin-left: 1rem;
 }
 .grid_container3 figcaption h4 {
-  color: #f2f2f2;
+  color: #000000;
   font-size: 2rem;
+  margin-top: 1rem;
 }
 .grid_container3 figcaption h4:hover {
   transition: 0.5s ease;
@@ -105,8 +111,8 @@
 }
 .grid_container3 figcaption p {
   font-size: 1.8rem;
-  margin-top: -2rem;
-  color: #f2f2f2;
+  margin-top: 1rem;
+  color: #000000;
 }
 .grid_container3 figcaption p:hover {
   transform: scale(1.1);
@@ -119,15 +125,33 @@
   font-size: 4rem;
   color: black;
   padding: 1rem;
-  transition: linear 2s;
 }
 .grid_container3 figcaption .fa-heart::before {
   content: "\f004";
+  transition: ease-in-out 2s;
+  mix-blend-mode: hard-light;
 }
 .grid_container3 figcaption .fa-heart:hover::before {
-  font-weight: bold;
   color: #9556DC;
+  font-weight: bold;
   cursor: pointer;
+}
+
+.loader_spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  color: #080808;
+  font-size: 10rem;
+  animation: spinner 5s;
+}
+@keyframes spinner {
+  100% {
+    z-index: 100;
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 10;
+  }
 }
 
 .container {
@@ -143,7 +167,7 @@
 }
 
 .grid_container1 {
-  background-color: #f2f2f2;
+  background-color: #fafafa;
   border-radius: 0.2rem;
   width: 100%;
 }
@@ -159,6 +183,7 @@
   width: 25%;
   text-align: center;
   font-size: 3.5rem;
+  margin-top: 2rem;
 }
 .description p {
   font-weight: 600;
@@ -166,6 +191,7 @@
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
+  margin-top: 1rem;
 }
 
 .formulaire {
@@ -174,7 +200,7 @@
 }
 .formulaire .form {
   box-shadow: inset -1rem 2rem 1rem -2rem #444343;
-  background-color: #eeeaea;
+  background-color: #f3f3f3;
   width: 100%;
   border-radius: 4px;
   display: flex;
@@ -187,6 +213,7 @@
   background: transparent;
   padding: 30px 3rem;
   height: 3.5rem;
+  width: 26rem;
 }
 .formulaire input[type=search]:focus {
   outline: none;
@@ -200,7 +227,7 @@
 }
 .formulaire .input-icone i {
   position: absolute;
-  left: 4rem;
+  left: -1rem;
   top: 1rem;
   color: #000000;
 }
@@ -217,13 +244,15 @@
   width: 100%;
 }
 .fonctionnement .fonctionnement_title h2 {
-  margin-left: 5rem;
+  margin-left: 8rem;
   font-size: 3rem;
   margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 .fonctionnement .fonctionnement_fas {
   font-size: 1.5rem;
   display: flex;
+  margin-left: 5rem;
   justify-content: space-evenly;
 }
 .fonctionnement .fonctionnement_fas i {
@@ -235,6 +264,7 @@
   color: #9556DC;
 }
 .fonctionnement .articles_filtres_a {
+  cursor: pointer;
   position: relative;
   text-decoration: none;
   display: flex;
@@ -245,18 +275,18 @@
   padding: 2rem;
   border-radius: 2rem;
   width: 25%;
+  margin: 0 auto;
   font-size: 2rem;
-  transition: ease 1s 0.5s;
-  opacity: 0.8;
   color: #000000;
-  box-shadow: 0.2rem 0.2rem 0rem 0.2rem #dddbdb;
+  transition: ease-in-out 0.7s;
+  box-shadow: 0.2rem 0.2rem 0rem 0.2rem rgba(242, 242, 242, 0.5);
 }
 .fonctionnement .articles_filtres_a:hover {
   font-weight: bold;
   transform: scale(1.1);
-  opacity: 1;
   cursor: pointer;
-  box-shadow: 0.5rem 0rem 1.8rem #9556DC;
+  box-shadow: 5px -1px 26px -2px #f2f2f2;
+  -webkit-box-shadow: 5px -1px 26px -2px rgba(126, 124, 124, 0.86);
 }
 .fonctionnement .articles_filtres_a span {
   display: flex;
@@ -269,9 +299,9 @@
   position: absolute;
   color: #fff;
   font-weight: bold;
-  left: -1.5rem;
+  left: -2rem;
   top: 1rem;
-  padding: 1rem;
+  padding: 2.2rem;
 }
 
 .grid_container4 {
@@ -281,12 +311,14 @@
 .grid_container4 .logo_footer {
   width: 8%;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 .grid_container4 ul {
   list-style-type: none;
 }
 .grid_container4 li {
   padding-bottom: 1rem;
+  font-weight: bold;
 }
 .grid_container4 li a {
   display: inline-block;
@@ -322,19 +354,27 @@
   margin-left: 10rem;
 }
 
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  animation: container 10s;
+}
+@keyframes container {
+  0% {
+    opacity: 0;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
-
-figure {
-  margin: 0;
 }
 
 a {

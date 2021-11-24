@@ -8,13 +8,13 @@
         border: transparent;
         box-shadow: 0rem 0rem 0.8rem $color1;
         margin-bottom: 3rem;
-        transition: ease-in-out 0.8s ;
+        transition: ease-in-out 0.7s ;
+        font-weight: bold;
         
         &:hover {
             transform: scale(1.2);
             background: linear-gradient(70deg, rgba(255, 121, 218, 0.8), rgb(149, 86, 220, 0.8));
             cursor: pointer;
-            font-weight: 500;
             box-shadow: 0.5rem 0rem 1.8rem $color1;
         }
     }
