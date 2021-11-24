@@ -10,6 +10,7 @@
                         /* 7. Main */
                         /* 8. Footer */
                         // 9. Load Spinner
+                        // 10. MédiaQueries
 
                                 /* Fin Sommaire */
 /* ********************************************************************************** */
@@ -31,7 +32,7 @@ $color6: #000000;
 // Components
 @import 'components/button';
 @import 'components/cards';
-@import 'components/load_Spinner';
+// @import 'components/load_Spinner';
 
 // Layout
 @import 'layout/container';
@@ -39,21 +40,25 @@ $color6: #000000;
 @import 'layout/form';
 @import 'layout/main';
 @import 'layout/footer';
+
+// 10. MédiaQueries
+@import 'mediaQueries/mediaQueriesTablette';
+@import 'mediaQueries/mediaQueriesPortable';
 // Fin 3. Sass
 
 // 4. Body
 .container {
-    // position: relative;
     width: 100%;
     max-width: 1600px;
+    min-width: 320px;
     margin: 0 auto;
     animation:  container 10s;
 
-    @keyframes container {
-        0% {
-            opacity: 0;
-        }       
-    }
+    // @keyframes container {
+    //     0% {
+    //         opacity: 0;
+    //     }       
+    // }
 }
 
 html {

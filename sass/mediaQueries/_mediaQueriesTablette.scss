@@ -1,0 +1,31 @@
+// 10. MédiaQuéries Tablette
+@media screen and (max-width: 1288px){
+
+    body {
+        background-color: red;
+    }
+
+    .grid_container2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .fonctionnement_fas {
+        display: flex;
+        flex-direction: column;
+
+        .articles_filtres_a {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+    }
+    
+    .description h2 {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+}
+// 10. Fin MédiaQuéries Tablette

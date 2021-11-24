@@ -36,10 +36,12 @@
   background-color: #F2F2F2;
 }
 .grid_container3 .restaurants {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 .grid_container3 .restaurants_title h2 {
-  margin-left: 8rem;
+  width: 85%;
+  margin: 0 auto;
   margin-bottom: 2rem;
   padding-top: 1rem;
   font-size: 3rem;
@@ -137,34 +139,6 @@
   cursor: pointer;
 }
 
-.chargement {
-  border-top: 1rem solid #bb6b10;
-  border-bottom: 2rem solid #E74C3C;
-  border-left: 1rem solid #0ce242;
-  border-right: 2rem solid #5333e4;
-  border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  animation: spinner 4s linear;
-  opacity: 0;
-}
-@keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-
 .container {
   width: 100%;
 }
@@ -175,6 +149,10 @@
   justify-content: center;
   align-items: center;
   height: 100px;
+}
+.entete h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 5rem;
 }
 
 .grid_container1 {
@@ -224,21 +202,23 @@
   background: transparent;
   padding: 30px 3rem;
   height: 3.5rem;
-  width: 26rem;
+  width: 73%;
 }
 .formulaire input[type=search]:focus {
   outline: none;
 }
 .formulaire input[type=search]::placeholder {
-  text-align: center;
+  text-align: right;
   color: #000000;
+  font-size: 2.2rem;
 }
 .formulaire .input-icone {
+  text-align: center;
   position: relative;
 }
 .formulaire .input-icone i {
   position: absolute;
-  left: -1rem;
+  left: 2rem;
   top: 1rem;
   color: #000000;
 }
@@ -247,29 +227,33 @@
 }
 
 .grid_container2 {
-  width: 100%;
-  display: flex;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .fonctionnement {
   width: 100%;
 }
+.fonctionnement .fonctionnement_title {
+  margin: 2rem;
+}
 .fonctionnement .fonctionnement_title h2 {
-  margin-left: 8rem;
   font-size: 3rem;
-  margin-bottom: 5rem;
-  margin-top: 2rem;
+  width: 85%;
+  margin: 0 auto;
 }
 .fonctionnement .fonctionnement_fas {
-  font-size: 1.5rem;
+  margin-top: 2rem;
   display: flex;
-  margin-left: 5rem;
   justify-content: space-evenly;
 }
 .fonctionnement .fonctionnement_fas i {
   margin-right: 1.5rem;
   margin-left: 1.5rem;
   color: #8b8a8a;
+}
+.fonctionnement .fonctionnement_fas a {
+  font-size: 2rem;
 }
 .fonctionnement .fonctionnement_fas .store {
   color: #9556DC;
@@ -278,16 +262,13 @@
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  display: flex;
-  justify-content: flex-start;
   border: transparent;
   background-color: #f2f2f2;
   font-weight: bold;
   padding: 2rem;
   border-radius: 2rem;
-  width: 25%;
+  width: 30%;
   margin: 0 auto;
-  font-size: 2rem;
   color: #000000;
   transition: ease-in-out 0.7s;
   box-shadow: 0.2rem 0.2rem 0rem 0.2rem rgba(242, 242, 242, 0.5);
@@ -313,6 +294,7 @@
   left: -2rem;
   top: 1rem;
   padding: 2.2rem;
+  font-size: 2rem;
 }
 
 .grid_container4 {
@@ -320,9 +302,13 @@
   font-size: 2rem;
 }
 .grid_container4 .logo_footer {
-  width: 8%;
+  font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
+}
+.grid_container4 .logo_footer h4 {
+  font-family: "Shrikhand", sans-serif;
+  color: #f2f2f2;
 }
 .grid_container4 ul {
   list-style-type: none;
@@ -362,19 +348,119 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 10rem;
+  width: 78%;
+  margin: 0 auto;
 }
 
+@media screen and (max-width: 1288px) {
+  body {
+    background-color: red;
+  }
+
+  .grid_container2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .fonctionnement_fas {
+    display: flex;
+    flex-direction: column;
+  }
+  .fonctionnement_fas .articles_filtres_a {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .description h2 {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 486px) {
+  .grid_container2 {
+    width: 100%;
+  }
+
+  .fonctionnement_fas {
+    margin-right: 5rem;
+    font-size: 10rem;
+  }
+
+  .grid_container3 {
+    width: 100%;
+    margin-top: 5rem;
+    background-color: #F2F2F2;
+  }
+  .grid_container3 .container_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .grid_container3 .container_item a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 487px) and (min-width: 414px) {
+  .fonctionnement_fas {
+    display: flex;
+    flex-direction: column;
+  }
+  .fonctionnement_fas .articles_filtres_a {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .grid_container3 {
+    width: 100%;
+    margin-top: 5rem;
+    background-color: #F2F2F2;
+  }
+  .grid_container3 .container_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .grid_container3 .container_item a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 415px) and (min-width: 320px) {
+  .fonctionnement_fas {
+    display: flex;
+    flex-direction: column;
+  }
+  .fonctionnement_fas .articles_filtres_a {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .fonctionnement_fas .articles_filtres_a:first-child, .fonctionnement_fas .articles_filtres_a:nth-child(2), .fonctionnement_fas .articles_filtres_a:nth-child(3) {
+    font-size: 1.4rem;
+  }
+
+  .grid_container3 {
+    width: 100%;
+    margin-top: 5rem;
+    background-color: #F2F2F2;
+  }
+  .grid_container3 .container_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .grid_container3 .container_item a {
+    width: 100%;
+  }
+}
 .container {
   width: 100%;
   max-width: 1600px;
+  min-width: 320px;
   margin: 0 auto;
   animation: container 10s;
-}
-@keyframes container {
-  0% {
-    opacity: 0;
-  }
 }
 
 html {

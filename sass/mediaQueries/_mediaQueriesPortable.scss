@@ -1,0 +1,105 @@
+// MédiaQueriesAccueilPortable
+@media screen and (max-width: 768px) and (min-width: 486px) {
+
+    // Filtres
+    .grid_container2 {
+        width: 100%;
+    }
+
+    .fonctionnement_fas  {
+        margin-right: 5rem;
+        font-size: 10rem;
+    }
+
+    // Restaurants
+    // Grid_container3
+    .grid_container3 {
+    width: 100%;
+    margin-top: 5rem;
+    background-color: #F2F2F2;
+    
+ 
+    .container_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .container_item a{
+        width: 100%;
+    }
+
+    }
+}
+
+@media screen and (max-width: 487px) and (min-width: 414px){
+    
+     .fonctionnement_fas {
+        display: flex;
+        flex-direction: column;
+
+        .articles_filtres_a {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+     .grid_container3 {
+        width: 100%;
+        margin-top: 5rem;
+        background-color: #F2F2F2;
+    
+ 
+        .container_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .container_item a {
+        width: 100%;
+        }
+
+    }
+                
+}
+@media screen and (max-width: 415px) and (min-width: 320px){
+    
+    .fonctionnement_fas {
+        display: flex;
+        flex-direction: column;
+
+        .articles_filtres_a {
+            width: 100%;
+            margin-bottom: 2rem;
+
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+       .grid_container3 {
+        width: 100%;
+        margin-top: 5rem;
+        background-color: #F2F2F2;
+    
+ 
+        .container_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .container_item a{
+        width: 100%;
+        }
+
+    }
+}
+// Fin MédiaQueriesAccueilPortable
