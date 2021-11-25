@@ -1,0 +1,47 @@
+// Animation
+.article_entrees {
+    animation: presentation linear 5s;
+    transition: 5s linear;
+    
+    @keyframes presentation {
+        0% {
+                opacity: 0;
+        }
+        
+        100% {
+                opacity: 1;
+        }
+    }
+}
+
+.article_plats {
+    animation: presentation2 linear 5s;
+    transition: 5s linear;
+    
+    @keyframes presentation2 {
+        0% {
+                opacity: 0;
+        }
+        
+        100% {
+                opacity: 1;
+        }
+    }
+}
+
+.article_desserts {
+    animation: presentation linear 5s;
+    transition: 5s linear;
+    
+    @keyframes presentation3 {
+        0% {
+                opacity: 0;
+        }
+        
+        100% {
+                opacity: 1;
+        }
+    }
+}
+
+// Fin Animation

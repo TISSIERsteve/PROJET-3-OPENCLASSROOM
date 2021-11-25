@@ -1,0 +1,35 @@
+// Validation
+.validation {
+    position: absolute;
+    background-color: $color3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.1rem;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    top: 0;
+    right: 0rem;
+    
+    animation: validator linear 3s;
+    
+    @keyframes validator {
+        0% {
+         
+         right: -7.5rem;
+     }
+     100% {
+         right: 0rem;
+     }
+ }
+                
+            }
+// Fin Validation
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-// Formulaire
+// Formulaire Page Accueil
 .formulaire {
     width: 100%;
     margin: 0 auto;
@@ -20,6 +20,7 @@
          padding :30px 3rem;
          height: 3.5rem;
          width: 73%;
+         cursor: pointer;
 
          &:focus {
              outline: none;
@@ -48,4 +49,4 @@
          font-size: 3.5rem;
      }
 }
-// Fin Formulaire
+// Fin Formulaire Page Accueil

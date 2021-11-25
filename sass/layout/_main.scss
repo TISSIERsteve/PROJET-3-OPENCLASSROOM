@@ -1,4 +1,4 @@
-// 7. Main
+// 7.  Main Page Accueil
 .grid_container2 {
     width: 90%;
     margin: 0 auto;
@@ -13,14 +13,13 @@
     
     .fonctionnement_title h2 {
         font-size: 3rem;
-        width: 85%;
+        width: 87%;
         margin: 0 auto;
     }
     
     .fonctionnement_fas  {
         margin-top: 2rem;
         display: flex;
-        // margin-left: 5rem;
         justify-content: space-evenly;
     }
     
@@ -48,7 +47,7 @@
         font-weight: bold;
         padding: 2rem;
         border-radius: 2rem;
-        width: 30%;
+        width: 28%;
         margin: 0 auto;
         color: $color6;
         transition: ease-in-out 0.7s;
@@ -81,4 +80,4 @@
         }
     }
 }
-// 7. Fin Main
+// 7. Fin Main Page Accueil
