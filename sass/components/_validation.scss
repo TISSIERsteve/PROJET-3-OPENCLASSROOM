@@ -1,31 +1,41 @@
-// Validation
-.validation {
-    position: absolute;
-    background-color: $color3;
-    color: white;
+.progressbar>div {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3.1rem;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    top: 0;
+    position: absolute;
+    background-color: $color3;
+    opacity: 0;
+    width: 20%;
+    height: 7.2rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    top: 0rem;
     right: 0rem;
-    
-    animation: validator linear 3s;
+    animation: validator 5s;
     
     @keyframes validator {
+
         0% {
-         
-         right: -7.5rem;
-     }
-     100% {
-         right: 0rem;
-     }
- }
-                
-            }
-// Fin Validation
+            width: 0%;
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            width: 20%;
+        }
+    }
+
+    .check {
+        transform: rotate(360deg);
+        transition: 5s;
+        font-size: 2rem;
+        color: white;
+
+    }
+
+}
+
+
 
 
 

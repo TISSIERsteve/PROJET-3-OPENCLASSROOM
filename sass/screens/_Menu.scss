@@ -84,13 +84,13 @@
         width: 97%;
         margin: 0 auto;
     }
-
+    
     section h3 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
         font-weight: normal;
     }
-
+    
     .article_entrees,
     .article_plats,
     .article_desserts {
@@ -108,14 +108,8 @@
         border-radius: 1.5rem;
         cursor: pointer;
         box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgb(192, 188, 188);
-        
-        &:hover{
-            transform: translateX(45px) scale(1.1);
-            //  animation: validator linear 3s;
-    }
-            
-        
-        
+        }
+
         h4 {
             margin-bottom: 0.5rem;
             font-size: 1.5rem;
@@ -126,15 +120,14 @@
             font-weight: 500;
             display: flex;
             justify-content: space-between;
-        }
+    }
+    }
+   
         
         strong {
             font-size: 1.5rem;
         }
-        
-    }
-    
-}
+
 .button_menu {
     text-align: center;
     margin-top: 5rem;

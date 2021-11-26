@@ -174,27 +174,36 @@
   left: 2rem;
 }
 
-.validation {
-  position: absolute;
-  background-color: #99E2D0;
-  color: white;
+.progressbar > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3.1rem;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-  top: 0;
+  position: absolute;
+  background-color: #99E2D0;
+  opacity: 0;
+  width: 20%;
+  height: 7.2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  top: 0rem;
   right: 0rem;
-  animation: validator linear 3s;
+  animation: validator 5s;
 }
 @keyframes validator {
   0% {
-    right: -7.5rem;
+    width: 0%;
+    opacity: 0;
   }
   100% {
-    right: 0rem;
+    opacity: 1;
+    width: 20%;
   }
+}
+.progressbar > div .check {
+  transform: rotate(360deg);
+  transition: 5s;
+  font-size: 2rem;
+  color: white;
 }
 
 @media screen and (max-width: 1288px) {
@@ -607,20 +616,18 @@
   cursor: pointer;
   box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #c0bcbc;
 }
-.submenus article:hover {
-  transform: translateX(45px) scale(1.1);
-}
-.submenus article h4 {
+.submenus h4 {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
-.submenus article p {
+.submenus p {
   font-size: 1.5rem;
   font-weight: 500;
   display: flex;
   justify-content: space-between;
 }
-.submenus article strong {
+
+strong {
   font-size: 1.5rem;
 }
 
