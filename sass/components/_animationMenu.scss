@@ -1,6 +1,6 @@
 // Animation
 .article_entrees {
-    animation: presentation linear 5s;
+    animation: presentation linear 3s;
     transition: 5s linear;
     
     @keyframes presentation {
@@ -15,7 +15,7 @@
 }
 
 .article_plats {
-    animation: presentation2 linear 5s;
+    animation: presentation2 linear 6s;
     transition: 5s linear;
     
     @keyframes presentation2 {
@@ -30,7 +30,7 @@
 }
 
 .article_desserts {
-    animation: presentation linear 5s;
+    animation: presentation linear 12s;
     transition: 5s linear;
     
     @keyframes presentation3 {

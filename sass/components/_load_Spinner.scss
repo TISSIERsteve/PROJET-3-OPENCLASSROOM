@@ -13,17 +13,25 @@
     left: 0;
     right: 0;
     bottom: 0;
-    animation: spinner 4s linear ;
+    animation: spinner 6s linear ;
     opacity: 0;
 
     @keyframes spinner {
         0% {
-            transform: rotate(0deg);
+            border-top: 1rem solid #40bb10;
+            border-bottom: 2rem solid #28089c;
+            border-left: 1rem solid #e2d40c;
+            border-right: 2rem solid #e4335f;
+            transform: rotate(0deg) scale(0);
             opacity: 1;
         }
 
         100% {
-            transform: rotate(360deg);
+            border-top: 1rem solid #bb6b10;
+            border-bottom: 2rem solid #E74C3C;
+            border-left: 1rem solid #0ce242;
+            border-right: 2rem solid #5333e4;
+            transform: rotate(360deg) scale(1.6);
             opacity: 1;
         }
         

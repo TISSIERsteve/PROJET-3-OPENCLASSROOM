@@ -11,29 +11,73 @@
     border-bottom-right-radius: 1rem;
     top: 0rem;
     right: 0rem;
-    animation: validator 5s;
     
+ 
     @keyframes validator {
-
+        
         0% {
             width: 0%;
             opacity: 0;
         }
+
+        25% {
+            width: 0%;
+            opacity: 0.2;
+        }
+
         100% {
             opacity: 1;
             width: 20%;
         }
     }
+}
 
-    .check {
-        transform: rotate(360deg);
-        transition: 5s;
-        font-size: 2rem;
-        color: white;
-
+.strong {
+    margin-right: 0rem;
+    
+    @keyframes strong {
+        0% {
+            margin-right: 0rem;
+        }
+        
+        100% {
+            margin-right: 7rem;
+        }
     }
+}
+
+.check {
+    font-size: 2.2rem;
+    color: white;
+
+    @keyframes check {
+       0% {
+           transform: rotate(360deg);
+           opacity: 0; 
+       } 
+       100% {
+           transform: rotate(0deg);
+           opacity: 1; 
+       } 
+    }
+    
 
 }
+.clampage {
+  font-size: 1.5rem;
+
+  @keyframes clamp {
+   
+      100% {
+        text-overflow: ellipsis;
+        overflow: hidden;  
+        white-space: nowrap;
+      }
+  }
+}
+
+
+
 
 
 
