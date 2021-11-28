@@ -1,9 +1,9 @@
 // 9. Load Spinner
 .chargement {
-    border-top: 1rem solid #bb6b10;
-    border-bottom: 2rem solid #E74C3C;
-    border-left: 1rem solid #0ce242;
-    border-right: 2rem solid #5333e4;
+    border-top: 1rem solid $color3;
+    border-bottom: 1rem solid $color1;
+    border-left: 1rem solid $color2;
+    border-right: rem solid $color3;
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
@@ -17,21 +17,13 @@
     opacity: 0;
 
     @keyframes spinner {
-        0% {
-            border-top: 1rem solid #40bb10;
-            border-bottom: 2rem solid #28089c;
-            border-left: 1rem solid #e2d40c;
-            border-right: 2rem solid #e4335f;
-            transform: rotate(0deg) scale(0);
-            opacity: 1;
-        }
+        // 0% {
+        //     transform: rotate(0deg) scale(0);
+        //     opacity: 1;
+        // }
 
         100% {
-            border-top: 1rem solid #bb6b10;
-            border-bottom: 2rem solid #E74C3C;
-            border-left: 1rem solid #0ce242;
-            border-right: 2rem solid #5333e4;
-            transform: rotate(360deg) scale(1.6);
+            transform: rotate(720deg) scale(1.6);
             opacity: 1;
         }
         
