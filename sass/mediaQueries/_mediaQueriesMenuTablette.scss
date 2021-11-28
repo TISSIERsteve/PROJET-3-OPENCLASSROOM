@@ -1,20 +1,26 @@
-@media screen and (max-width: 1050px) {
-        body {
-            background-color: rgb(23, 211, 64);
-        }
+@media screen and (max-width: 972px) {
        
-.submenus {
+    .submenus {
     display: flex;
     flex-direction: column;
+    } 
     
   
     #division {
         width: 100%;
     }
-    
 }
- 
+
+@media screen and (min-width: 600px) and (max-width:973px) {
+       
+    .submenus {
+    display: flex;
+    flex-direction: column;
+    } 
     
- 
-   
+  
+    #division {
+        width: 80%;
+        margin: 0 auto;
+    }
 }

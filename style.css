@@ -353,17 +353,25 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 1050px) {
-  body {
-    background-color: #17d340;
-  }
-
+@media screen and (max-width: 972px) {
   .submenus {
     display: flex;
     flex-direction: column;
   }
-  .submenus #division {
+
+  #division {
     width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 973px) {
+  .submenus {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #division {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .entete {
@@ -425,8 +433,7 @@
   font-size: 2.5rem;
   border: none;
   background: transparent;
-  padding: 30px 3rem;
-  height: 3.5rem;
+  height: 7rem;
   width: 73%;
   cursor: pointer;
 }
@@ -444,8 +451,8 @@
 }
 .formulaire .input-icone i {
   position: absolute;
-  left: 2rem;
-  top: 1rem;
+  left: 0rem;
+  top: 1.5rem;
   color: #000000;
 }
 .formulaire .position {
@@ -648,6 +655,7 @@
 .submenus {
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -678,16 +686,17 @@
 .submenus .article_entrees,
 .submenus .article_plats,
 .submenus .article_desserts {
+  gap: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
   width: 92%;
 }
 .submenus article {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 9%;
   position: relative;
   background-color: white;
   padding: 1.5rem;
@@ -714,7 +723,7 @@ strong {
 
 .button_menu {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 article:hover .progressbar > div {
@@ -735,7 +744,6 @@ article:hover p {
 
 .container {
   width: 100%;
-  max-width: 1600px;
   min-width: 320px;
   margin: 0 auto;
   animation: container 10s;
