@@ -189,7 +189,7 @@
   position: absolute;
   background-color: #99E2D0;
   opacity: 0;
-  width: 20%;
+  width: 10rem;
   height: 7.2rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -240,6 +240,10 @@
 
 .clampage {
   font-size: 1.5rem;
+  height: 1.8rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 @keyframes clamp {
   100% {
@@ -346,6 +350,19 @@
     width: 100%;
   }
   .grid_container3 .container_item a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  body {
+    background-color: #17d340;
+  }
+
+  .submenus {
+    display: flex;
+    flex-direction: column;
+  }
+  .submenus #division {
     width: 100%;
   }
 }
@@ -596,7 +613,6 @@
   position: relative;
   width: 100%;
   margin: -2rem auto;
-  background-color: #f2f2f2;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
   background-color: #f2f2f2;
@@ -611,6 +627,7 @@
 .entrees h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 2rem;
+  margin-top: 3rem;
 }
 .entrees .fa-heart_menu {
   font-size: 4rem;
@@ -630,17 +647,27 @@
 
 .submenus {
   width: 100%;
-  margin: 5rem auto;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .submenus section {
+  margin-top: 3rem;
   text-align: center;
 }
 .submenus section h3 {
+  position: relative;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+.submenus section h3::after {
+  position: absolute;
+  content: "";
+  width: 4rem;
+  height: 0.3rem;
+  background-color: #99E2D0;
+  left: 0;
+  top: 3rem;
 }
 .submenus .division {
   display: flex;
@@ -651,18 +678,19 @@
 .submenus .article_entrees,
 .submenus .article_plats,
 .submenus .article_desserts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 2rem;
-  width: 100%;
+  width: 92%;
 }
 .submenus article {
-  width: 96%;
-  max-height: 7.8rem;
-  overflow: hidden;
-  margin: 1rem auto;
-  margin-bottom: 5%;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 9%;
   position: relative;
   background-color: white;
-  padding: 1.54rem;
+  padding: 1.5rem;
   border-radius: 1.5rem;
   cursor: pointer;
   box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #c0bcbc;
@@ -670,6 +698,9 @@
 .submenus h4 {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .zone_rectrac {
@@ -683,7 +714,6 @@ strong {
 
 .button_menu {
   text-align: center;
-  margin-top: -5rem;
   margin-bottom: 2rem;
 }
 
