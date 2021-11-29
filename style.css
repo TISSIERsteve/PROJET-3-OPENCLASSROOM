@@ -603,8 +603,7 @@
     width: 90%;
     justify-content: flex-start;
   }
-
-  #division {
+  .submenus div.division {
     width: 100%;
   }
 }
