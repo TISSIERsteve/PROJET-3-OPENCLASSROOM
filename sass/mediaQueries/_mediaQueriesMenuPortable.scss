@@ -1,0 +1,18 @@
+// MédiaQueries Menu Portable
+@media screen and (max-width: 972px) {
+    .submenus {
+        display: flex;
+        flex-direction: column;
+        
+        section {
+             display: flex;
+             width: 90%;
+             justify-content: flex-start;
+         }
+    } 
+    
+    #division {
+        width: 100%;
+    }
+}
+// Fin MédiaQueries Menu Portable

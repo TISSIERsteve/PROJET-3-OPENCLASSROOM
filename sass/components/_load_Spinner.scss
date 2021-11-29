@@ -1,4 +1,4 @@
-// 9. Load Spinner
+// Load Spinner
 .chargement {
     border-top: 1rem solid $color3;
     border-bottom: 1rem solid $color1;
@@ -8,7 +8,8 @@
     width: 10rem;
     height: 10rem;
     margin: auto;
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
@@ -17,18 +18,12 @@
     opacity: 0;
 
     @keyframes spinner {
-        // 0% {
-        //     transform: rotate(0deg) scale(0);
-        //     opacity: 1;
-        // }
-
         100% {
-            transform: rotate(720deg) scale(1.6);
+            transform: rotate(1440deg) scale(1.6);
             opacity: 1;
         }
         
     }
 }
-
-// 9. Fin Load Spinner
+// Fin Load Spinner
 

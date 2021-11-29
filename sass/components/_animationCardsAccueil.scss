@@ -1,0 +1,83 @@
+ @media screen and (max-width: 2000px) and (min-width: 768px) {
+
+ .container_item a.img1{
+
+        &:hover {
+            animation: img1 5s ease-in-out forwards;
+            cursor: zoom-in;
+            z-index: 1000;
+            margin: 0 auto;
+        }
+        
+    }
+    
+    @keyframes img1 {
+        33% {
+            transform: translateZ(0rem) translate(50%, 50%);
+        }
+        
+        100% {
+            transform: translateZ(8rem) translate(50%, 50%);
+        }
+
+    }
+
+ .container_item a.img2{
+        
+        &:hover {
+            animation: img2 5s ease-in-out forwards;
+            cursor: zoom-in;
+            z-index: 1000;
+            margin: 0 auto;
+        }
+    }
+
+    @keyframes img2 {
+        33% {
+            transform: translateZ(0rem) translate(-50%, +50%);
+        }
+
+        100% {
+            transform: translateZ(8rem) translate(-50%, 50%);
+        }
+    }
+
+ .container_item a.img3{
+        
+        &:hover {
+            animation: img3 5s ease-in-out forwards;
+            cursor: zoom-in;
+            z-index: 1000;
+            margin: 0 auto;
+        }
+    }
+
+    @keyframes img3 {
+        33% {
+            transform: translateZ(0rem) translate(+50%, -50%);
+        }
+
+        100% {
+            transform: translateZ(8rem) translate(+50%, -50%);
+        }
+    }
+
+ .container_item a.img4{
+                
+        &:hover {
+            animation: img4 5s ease-in-out forwards;
+            cursor: zoom-in;
+            margin: 0 auto;
+        }
+    }
+
+    @keyframes img4 {
+        33% {
+            transform: translateZ(0rem) translate(-50%, -50%);
+        }
+
+        100% {
+            transform: translateZ(8rem) translate(-50%, -50%);
+        }
+    }
+}   

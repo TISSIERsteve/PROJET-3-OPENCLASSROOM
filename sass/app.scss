@@ -9,11 +9,6 @@
                         /* 6. Header Page accueil*/
                         /* 7. Main Page Accueil*/
                         /* 8. Footer de toutes les pages*/
-                        // 9. Load Spinner
-                        // 10. MédiaQueries
-                        // 11. Layout
-                        // 12. SCreens
-                        // 13. Main Menu
 
                                 /* Fin Sommaire */
 /* ********************************************************************************** */
@@ -33,6 +28,8 @@ $color6: #000000;
 
 // 3. Sass
 // Components
+@import 'components/form';
+@import 'components/animationCardsAccueil';
 @import 'components/button';
 @import 'components/cards';
 @import 'components/load_Spinner';
@@ -41,20 +38,19 @@ $color6: #000000;
 @import 'components/validation';
 
 // 10. MédiaQueries
-@import 'mediaQueries/mediaQueriesTablette';
-@import 'mediaQueries/mediaQueriesPortable';
+@import 'mediaQueries/mediaQueriesAccueilTablette';
+@import 'mediaQueries/mediaQueriesAccueilPortable';
 @import 'mediaQueries/mediaQueriesMenuTablette';
+@import 'mediaQueries/mediaQueriesMenuPortable';
 
 // 11. Layout
 @import 'layout/container';
 @import 'layout/header';
-@import 'layout/form';
 @import 'layout/main';
 @import 'layout/footer';
 
-// 12.Screens
+// 12.Screens Menu
 @import 'screens/Menu';
-
 // Fin 3. Sass
 
 // 4. Body

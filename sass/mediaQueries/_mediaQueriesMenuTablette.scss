@@ -1,25 +1,13 @@
-@media screen and (max-width: 972px) {
-       
+// MédiaQueries Menu Tablette
+@media screen and (min-width: 600px) and (max-width:973px) {
     .submenus {
     display: flex;
     flex-direction: column;
-    } 
-  
+
     #division {
         width: 100%;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width:973px) {
-       
-    .submenus {
-    display: flex;
-    flex-direction: column;
-    } 
-    
-  
-    #division {
-        width: 80%;
         margin: 0 auto;
     }
 }
+}
+// Fin MédiaQueries Menu Tablette

@@ -23,15 +23,11 @@
         flex-wrap: wrap;
         width: 85%;
         margin: 0 auto;
+        perspective: 12.5rem;
     }
     
     .container_item a{
         width: 48%;
-
-        &:hover {
-            transform: scale(1.05);
-            transition: ease-in-out 0.5s;
-        }
     }
     
     figure{
