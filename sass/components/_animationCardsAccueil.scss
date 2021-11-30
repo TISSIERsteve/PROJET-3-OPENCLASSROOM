@@ -1,6 +1,6 @@
  @media screen and (max-width: 2000px) and (min-width: 768px) {
 
- .container_item a.img1{
+ .container_item a.img1 {
 
         &:hover {
             animation: img1 5s ease-in-out forwards;
@@ -19,8 +19,9 @@
         100% {
             transform: translateZ(8rem) translate(50%, 50%);
         }
-
+        
     }
+    
 
  .container_item a.img2{
         

@@ -156,7 +156,7 @@
   flex-wrap: wrap;
   width: 85%;
   margin: 0 auto;
-  perspective: 12.5rem;
+  perspective: 18rem;
 }
 .grid_container3 .container_item a {
   width: 48%;
@@ -588,7 +588,7 @@
     display: flex;
     flex-direction: column;
   }
-  .submenus #division {
+  .submenus div .division {
     width: 100%;
     margin: 0 auto;
   }
@@ -792,7 +792,7 @@
 }
 
 .container_main {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
