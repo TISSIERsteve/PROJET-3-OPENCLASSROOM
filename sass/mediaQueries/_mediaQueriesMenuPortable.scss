@@ -1,6 +1,13 @@
 // MédiaQueries Menu Portable
 @media screen and (max-width: 972px) {
 
+    header .entete {
+        
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
     .submenus {
         display: flex;
         flex-direction: column;

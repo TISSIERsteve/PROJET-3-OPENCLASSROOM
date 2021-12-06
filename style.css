@@ -42,12 +42,8 @@
 }
 .formulaire .input-icone {
   text-align: center;
-  position: relative;
 }
 .formulaire .input-icone i {
-  position: absolute;
-  left: 0rem;
-  top: 1.5rem;
   color: #000000;
 }
 .formulaire .position {
@@ -244,7 +240,7 @@
   border-top: 1rem solid #99E2D0;
   border-bottom: 1rem solid #9556DC;
   border-left: 1rem solid #FF79DA;
-  border-right: 0rem solid #99E2D0;
+  border-right: rem solid #99E2D0;
   border-radius: 50%;
   width: 10rem;
   height: 10rem;
@@ -594,6 +590,10 @@
   }
 }
 @media screen and (max-width: 972px) {
+  header .entete h1 {
+    font-size: 4rem;
+  }
+
   .submenus {
     display: flex;
     flex-direction: column;
@@ -941,11 +941,6 @@ article:hover p {
   min-width: 320px;
   margin: 0 auto;
   animation: container 10s;
-}
-@keyframes container {
-  0% {
-    opacity: 0;
-  }
 }
 
 html {
