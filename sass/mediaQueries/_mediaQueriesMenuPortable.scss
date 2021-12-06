@@ -1,12 +1,6 @@
 // MédiaQueries Menu Portable
 @media screen and (max-width: 972px) {
 
-    header .entete {
-        
-        h1 {
-            font-size: 4rem;
-        }
-    }
 
     .submenus {
         display: flex;
@@ -22,6 +16,16 @@
              width: 100%;
          }
     } 
+    
+}
+
+@media screen and (max-width: 375px) {
+      header .entete {
+        
+        h1 {
+            font-size: 4rem;
+        }
+    }
     
 }
 // Fin MédiaQueries Menu Portable

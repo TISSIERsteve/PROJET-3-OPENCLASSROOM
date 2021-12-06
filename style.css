@@ -590,10 +590,6 @@
   }
 }
 @media screen and (max-width: 972px) {
-  header .entete h1 {
-    font-size: 4rem;
-  }
-
   .submenus {
     display: flex;
     flex-direction: column;
@@ -605,6 +601,11 @@
   }
   .submenus div.division {
     width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  header .entete h1 {
+    font-size: 4rem;
   }
 }
 .entete {
@@ -941,6 +942,11 @@ article:hover p {
   min-width: 320px;
   margin: 0 auto;
   animation: container 10s;
+}
+@keyframes container {
+  0% {
+    opacity: 0;
+  }
 }
 
 html {
